@@ -33,3 +33,16 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+----------------------------------
+Credits
+----------------------------------
+
+Thank you to the minetest community who has shared their code 
+and knowledge with me.
+
+Special thanks in this mod to:
+mauvebic - code ideas came from his universal_node_ownership mod
+randomproof - code ideas came from his node_ownership mod
+anyone else who i borrowed code from =)
