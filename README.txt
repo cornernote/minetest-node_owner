@@ -11,7 +11,7 @@ Source Code: https://github.com/cornernote/minetest-node_owner
 DESCRIPTION
 ----------------------------------
 
-Automatically protect players nodes.
+Automatically protect nodes placed by players.
  - prevents digging other players nodes
  - prevents placing onto other players nodes
 
