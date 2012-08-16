@@ -4,6 +4,7 @@ MINETEST NODE OWNER
 
 Copyright (C) 2012 cornernote, Brett O'Donnell <cornernote@gmail.com>
 
+Zip Download: https://github.com/cornernote/minetest-node_owner/zipball/master
 Source Code: https://github.com/cornernote/minetest-node_owner
 
 
