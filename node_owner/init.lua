@@ -1,9 +1,13 @@
 --[[
 
-Node Owner
-by cornernote <cornernote@gmail.com>
+Node Owner for Minetest
+
+Copyright (c) 2012 cornernote, Brett O'Donnell <cornernote@gmail.com>
+Source Code: https://github.com/cornernote/minetest-node_owner
+License: GPLv3
 
 ]]--
+
 
 -- override minetest.item_place_node
 local old_item_place_node = minetest.item_place_node
