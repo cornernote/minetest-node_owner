@@ -8,16 +8,19 @@ License: GPLv3
 
 ]]--
 
+--add adminnode provilege
+
+minetest.register_privilege("admin_node", "Player can dig the node that is owned by other player.")
 
 -- override minetest.item_place_node
 local old_item_place_node = minetest.item_place_node
 function minetest.item_place_node(itemstack, placer, pointed_thing)
     local player = placer:get_player_name()
-	local base_node = minetest.env:get_meta(pointed_thing.under)
-	local owner = base_node:get_string("owner")
+    local base_node = minetest.env:get_meta(pointed_thing.under)
+    local owner = base_node:get_string("owner")
 	
 	-- do not allow placing onto other players nodes
-    if owner ~= player and owner ~= '' then
+    if owner ~= player and owner ~= '' and privs.admin_node ~= true then
 		minetest.chat_send_player(player, "You can not place nodes here because it is owned by "..owner..".")
 		return itemstack
     end
@@ -40,7 +43,7 @@ function minetest.node_dig(pos, node, digger)
 	local owner = meta:get_string("owner")
 	
 	-- do not allow digging other players nodes
-	if owner ~= player and owner ~= '' then
+	if owner ~= player and owner ~= '' and privs.admin_node ~= true then
 		minetest.chat_send_player(player, "You can not dig this node because it is owned by "..owner..".")
 		return
 	end
