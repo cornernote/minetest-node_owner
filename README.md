@@ -13,7 +13,7 @@ Blocks you place are owned by you and others cannot dig them or place onto them.
 
 - **[Documentation](http://cornernote.github.io/minetest-node_owner)**
 - **[GitHub Project](https://github.com/cornernote/minetest-node_owner)**
-- **[Minetest Forum](http://minetest.net/forum/viewtopic.php?id=2800)**
+- **[Minetest Forum](https://forum.minetest.net/viewtopic.php?id=2800)**
 
 
 ## Support
